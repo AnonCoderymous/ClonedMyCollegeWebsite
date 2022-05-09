@@ -1,0 +1,504 @@
+/*
+	This website is remake of original website
+		https://poonacollege.edu.in/
+	All code written and property belongs to Huzefa Khalil Dayanji
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:display=swap');
+/*font-family: 'Roboto Mono', monospace;*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	background: white;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+div {
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.top-bar {
+	position: relative;
+	display: block;
+	font-size: 14px;
+}
+
+.href-links {
+	padding: 1px 13px;
+	margin: 0;
+	background: #282858;
+}
+
+.href-links ol {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.href-links ol li {
+	padding: 0px 35px;
+}
+
+.href-links ol li a{
+	color: white;
+	text-decoration: none;
+}
+
+.href-links ol li a:hover{
+	color: orange;
+}
+
+.image-area {
+	align-content: center;
+	text-align: center;
+	margin: 10px;
+}
+
+.mid-bottom-nav {
+	background: #282858;
+}
+
+.mid-bottom-nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.mid-bottom-nav ul li{
+	border-right: 1px solid #ccc;
+	padding: 10px 5px;
+}
+
+.mid-bottom-nav ul li a{
+	color: white;
+	width: 100%;
+	padding: 5px 2px;
+	text-decoration: none;
+}
+
+.mid-bottom-nav ul li a:hover {
+	background: darkorange;
+}
+
+.mid-bottom-nav ul li select {
+	font-size: 14px;
+	background: #282858;
+	border: 1px solid #fff;
+	color: #fff;
+	margin: 0;
+	outline: none;
+}
+
+select option {
+	background: #fff;
+	color: rgb(0, 0, 0, 1);
+}
+
+.bottom {
+	background: darkblue;
+	color: #fff;
+	padding: 7px;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.bottom span {
+	background: darkblue;
+	z-index: 1;
+	display: block;
+}
+
+.tiny-news {
+	font-size: 13.5px;
+}
+
+.main-sec {
+	position: relative;
+	margin: 3rem auto;
+	display: flex;
+}
+
+.images-slides img {
+	width: 900px;
+	height: 540px;
+	margin: -1.5rem 2rem 0rem 2rem;
+	-webkit-box-shadow: 0px 6px 10px rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+.button-images img{
+	width: 350px;
+}
+
+form {
+	text-align: center;
+	background: #282858;
+	overflow: hidden;
+	width: 360px;
+	border-radius: 5px;
+	margin-top: 7px;
+}
+
+form h3 {
+	color: white;
+}
+
+form input {
+	width: 320px;
+	background: whitesmoke;
+	outline: none;
+	border: none;
+	padding: 4px 0px 4px 3px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+	z-index: 1;
+}
+
+form input::placeholder {
+	z-index: 1;
+}
+
+form select {
+	align-content: flex-start;
+	justify-content: left;
+	display: flex;
+	margin-left: 1rem;
+	padding: 3px;
+}
+
+.form-terms {
+	font-size: 13.5px;
+	color: #fff;
+	text-align: left;
+	margin: -0.5rem 1rem 1rem 1rem;
+	line-height: 1.3rem;
+}
+
+form input[type=button] {
+	width: 200px;
+	background: #fd5308;
+	color: #fff;
+	text-align: center;
+	height: 2rem;
+	cursor: not-allowed;
+
+}
+
+.img-area {
+	width: 100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding: 3rem 0rem 0rem 20rem;
+}
+
+.course-slider {
+	padding-top: 2rem;
+	background: lightblue;
+	height: 21rem;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 5px;
+}
+
+.course-slider img {
+	width: 140px;
+	height: auto;
+	display: block;
+	margin: 10px 10px;
+}
+
+.course-slider span {
+	text-align: center;
+	color: #282858;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.spoken_english , .national_day, .botany{
+	margin: 1rem 2rem 1rem 2rem;
+}
+
+.course-slider button {
+	display: block;
+	background: #282858;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	transition: background 1s ease;
+	margin: 0.5rem;
+}
+
+.fa-book {
+	margin-right: 10px;
+}
+
+.course-slider button:hover{
+	background: blue;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #fff;
+  padding: 1px;
+  text-align:auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 1);
+  /*border: 1px solid rgba(0, 0, 0, 1);*/
+  padding: 5px;
+  margin: 1rem auto;
+  font-size: 15px;s
+  overflow:hidden;
+  font-weight:bold;
+  text-align: inherit;
+}
+
+.grid-item span {
+	background: #282858;
+	text-transform: uppercase;
+	padding-right: 330px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	color: #fff;
+	font-family: 'Roboto Mono', sans-serif;
+	border-radius: 3px;
+	border-bottom: 3px solid blue;
+}
+
+.grid-item img {
+	width: 350px;
+	text-align: center;
+	display: block;
+	margin: 1rem 0rem 0rem 2rem;
+	border: 2px solid;
+	border-radius: 10px;
+}
+
+.notice-main img{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	filter: grayscale(50%);
+	position: relative;
+	width: 150px;
+	border-radius: 0px;
+}
+
+.notice-main {
+	border: 1px solid #000;
+	background: lightgrey;
+	border-radius: 6px;
+	padding: 0px;
+	margin-top: 30px;
+	width: 400px;
+}
+
+.notice-text {
+	color: #282858;
+	margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.notice-text button {
+	margin-top: 0.5rem;
+	color: white;
+	background: #282858;
+	text-transform: capitalize;
+	font-size: 15px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	transition: background 1s;
+}
+
+.notice-text button:hover{
+	background: blue;
+	cursor: pointer;
+}
+
+.grid-container-two {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: -1rem 0rem auto;
+}
+
+.grid-item-two ol {
+	list-style-type: none;
+	text-transform: capitalize;
+	text-align: center;
+	color: #282858;
+	cursor: pointer;
+	pointer-events: auto;
+	font-size: 20px;
+}
+
+.grid-item-two {
+	margin: 0rem 3rem;
+}
+
+.grid-item-two ol li:after{
+	content: "- - - - - - - - -";
+	display: block;
+}
+
+.grid-item-two img {
+	width: 400px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	margin: 1rem  0.5rem auto;
+	border-radius: 4px;
+	transition: transform 0.5s ease;
+}
+
+.grid-item-two img:hover {
+	transform: scale(1.1);
+	cursor: default;
+	pointer-events: auto;
+}
+
+.recruiters {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #282858;
+	border: 1px solid lightgrey;
+	box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	margin: 1rem 1rem;
+	text-transform: uppercase;
+	padding: 50px;
+	background: linear-gradient(to right, #fff, whitesmoke);
+}
+.recruiters img {
+	width: 150px;
+	margin: 0rem 2rem 0rem 2rem;
+}
+
+footer {
+	background: #282858;
+	color: white;
+	padding: 30px 20px 30px 20px;
+}
+
+.nav-links h5 {
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.nav-links h5:after {
+	position: relative;
+	content: "";
+	width: 200px;
+	border: 1px solid orange;
+	display: block;
+	text-align: center;
+	align-content: center;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.nav-links ol {
+	list-style-type: none;
+	display: block;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0rem 3rem 0rem 3rem;
+}
+
+.nav-links ol li {
+	margin-top: 0.5rem;
+	display: block;
+}
+
+.nav-links ol li:hover {
+	transition: 0.4s ease;
+	pointer-events: auto;
+	color: orange;
+	cursor: pointer;
+}
+
+.social-media-icons ol {
+	list-style-type: none;
+	display: flex;
+}
+
+.social-media-icons ol li {
+	padding: 0px 10px;
+	color: white;
+}
+
+.fa-brands {
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.fa-facebook:hover {
+	transition: 0.5s ease;
+	cursor: pointer;
+	fill: white;
+	background: blue;
+}
+
+.fa-youtube:hover, .fa-google-plus-g:hover {
+	transition: 0.5s ease;
+	cursor: pointer;
+	fill: white;
+	background: red;
+}
+
+.fa-twitter-square:hover {
+	transition: 0.5s ease;
+	fill: white;
+	cursor: pointer;
+	background: lightblue;
+}
+
+.fa-linkedin:hover {
+	transition: 0.5s ease;
+	fill: white;
+	cursor: pointer;
+	background: transparent;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: -2.5rem;
+}
+
+.design-name {
+	text-align: right;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: -1.5rem;
+}
